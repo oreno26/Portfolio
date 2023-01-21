@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+.fa-xl{
+    color: red;
+}
+
+#overlay{
+ background-image: url("IMG_5466.JPG");   
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ width: auto;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+
+section{
+    color: white;
+    border: 5px red double;
+    height: fit-content;
+    width: 20vw;
+    display: flex
+}
+
+section:hover{
+    background-color: rgb(0, 0, 0);
+    /* opacity: 0.7; */
+    transition-duration: 1s;
+    cursor: pointer;
+    width: 25vw;
+    height: auto;
+    font-size: 1.2em;
+    
+}
+
+.one{
+    display: flex;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Set a background color */
+body {
+    background-color: #000000;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 100vh;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(255, 0, 0);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: rgb(255, 0, 0);
+    border: 4px solid #ff0000;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    margin-left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    margin-right: 0;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 31px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -12px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    border: #ff0000 5px solid;
+  }
